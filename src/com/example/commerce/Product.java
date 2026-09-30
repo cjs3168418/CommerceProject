@@ -1,12 +1,9 @@
 package com.example.commerce;
 
+
 public class Product {
 //    개별 상품 정보를 가지는 클래스
-@Override
-public String toString() {
-    return "상품명: " + productName + " | " + "가격: " + price + " | "
-            + " 제품설명: " + description + " | " + "재고수량: " + stockQuantity;
-}
+
     // 속성
     private String productName;  //상품명
     private int price;           //가격
@@ -23,6 +20,22 @@ public String toString() {
     }
 
     // 기능
+    public String getProductName() {
+        return productName;
+    }
+    public int getPrice() {
+        return price;
+    }
+    public String getDescription() {
+        return description;
+    }
+    public int getStockQuantity() {
+        return stockQuantity;
+    }
+
+
+
+
 
 
 
